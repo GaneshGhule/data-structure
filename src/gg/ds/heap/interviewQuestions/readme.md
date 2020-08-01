@@ -46,3 +46,49 @@
     3) Finally connect the two ropes and all ropes have connected.
     
     Total cost for connecting all ropes is 5 + 9 + 15 = 29. 
+    
+5. **Employee free time**
+
+    We are given a list schedule of employees, which represents the working time for each employee.
+    
+    Each employee has a list of non-overlapping Intervals, and these intervals are in sorted order.
+    
+    Return the list of finite intervals representing common, positive-length free time for all employees, also in sorted order.    
+    
+        Example 1:
+        
+        Input: schedule = [[[1,2],[5,6]],[[1,3]],[[4,10]]]
+        Output: [[3,4]]
+        Explanation:
+        There are a total of three employees, and all common
+        free time intervals would be [-inf, 1], [3, 4], [10, inf].
+        We discard any intervals that contain inf as they aren't finite.
+
+6. **Minimum Number of Refueling Stops**
+
+    A car travels from a starting position to a destination which is target miles east of the starting position.
+    
+    Along the way, there are gas stations.  Each station[i] represents a gas station that is station[i][0] miles east of the starting position, and has station[i][1] liters of gas.
+
+    The car starts with an infinite tank of gas, which initially has startFuel liters of fuel in it.  It uses 1 liter of gas per 1 mile that it drives.
+
+    When the car reaches a gas station, it may stop and refuel, transferring all the gas from the station into the car.
+
+    What is the least number of refueling stops the car must make in order to reach its destination?  If it cannot reach the destination, return -1.
+    
+        Example 1:
+        
+        Input: target = 1, startFuel = 1, stations = []
+        Output: 0
+        Explanation: We can reach the target without refueling.
+        
+        Example 2:
+        
+        Input: target = 100, startFuel = 1, stations = [[10,100]]
+        Output: -1
+        Explanation: We can't reach the target (or even the first gas station).
+        
+        Example 3:
+        
+        Input: target = 100, startFuel = 10, stations = [[10,60],[20,30],[30,30],[60,40]]
+        Output: 2    
