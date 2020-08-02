@@ -92,3 +92,69 @@
         
         Input: target = 100, startFuel = 10, stations = [[10,60],[20,30],[30,30],[60,40]]
         Output: 2    
+        
+7. **Cheapest Flights Within K Stops**  
+
+    There are n cities connected by m flights. Each flight starts from city u and arrives at v with a price w.
+
+    Now given all the cities and flights, together with starting city src and the destination dst, your task is
+    to find the cheapest price from src to dst with up to k stops. If there is no such route, output -1.    
+    
+        Example 1:
+        Input: 
+        n = 3, edges = [[0,1,100],[1,2,100],[0,2,500]]
+        src = 0, dst = 2, k = 1
+        Output: 200
+        Explanation: 
+        The graph looks like this:
+              0
+         100 / \ 200
+            /   \
+           1---- 2
+             100
+             
+        The cheapest price from city 0 to city 2 with at most 1 stop costs 200, as marked red in the picture.
+        Example 2:
+        Input: 
+        n = 3, edges = [[0,1,100],[1,2,100],[0,2,500]]
+        src = 0, dst = 2, k = 0
+        Output: 500
+        Explanation: 
+        The graph looks like this:
+        
+               0
+          100 / \  500
+             /   \
+            1---- 2
+              100
+        The cheapest price from city 0 to city 2 with at most 0 stop costs 500, as marked blue in the picture.
+           
+8. **Network Delay Time**
+    There are N network nodes, labelled 1 to N.
+    
+    Given times, a list of travel times as directed edges times[i] = (u, v, w), where u is the source node, v is the target node, and w is the time it takes for a signal to travel from source to target.
+    
+    Now, we send a signal from a certain node K. How long will it take for all nodes to receive the signal? If it is impossible, return -1.
+    
+        Input: times = [[2,1,1],[2,3,1],[3,4,1]], N = 4, K = 2
+        Output: 2
+        
+           2
+        1 / \ 1
+        /    \ 
+        1     3  
+               \  1
+                \
+                 4
+9. **Sort a nearly sorted (or K sorted) array**
+    Given an array of n elements, where each element is at most k away from its target position, devise an algorithm that sorts in O(n log k) time. For example, let us consider k is 2, an element at index 7 in the sorted array, can be at indexes 5, 6, 7, 8, 9 in the given array.
+    
+        Examples:
+        
+        Input : arr[] = {6, 5, 3, 2, 8, 10, 9}
+                    k = 3 
+        Output : arr[] = {2, 3, 5, 6, 8, 9, 10}
+        
+        Input : arr[] = {10, 9, 8, 7, 4, 70, 60, 50}
+                 k = 4
+        Output : arr[] = {4, 7, 8, 9, 10, 50, 60, 70}                 
